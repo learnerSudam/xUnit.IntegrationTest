@@ -1,0 +1,38 @@
+# Compiled output (common exclusions)
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.cache
+*.sdf
+*.opensdf
+*.ilk
+*.sbr
+*.log
+*.tmp
+*.vshost.exe
+*.testsettings
+*.vsmdi
+*.fakes
+
+# Visual Studio specific files (common exclusions)
+.vs/
+*.csproj.user
+*.sln.docstates
+*.sln.cache
+*.DotSettings.user
+
+
+
+# EmployeeAdminPortal
+EmployeeAdminPortal/bin/*
+EmployeeAdminPortal/obj/*
+EmployeeAdminPortal/*.csproj.user
+EmployeeAdminPortal/.vs*
+
+# EmployeeAdminPortal.IntegrationTests
+EmployeeAdminPortal.IntegrationTests/bin/*
+EmployeeAdminPortal.IntegrationTests/obj/*
