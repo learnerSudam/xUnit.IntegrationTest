@@ -1,0 +1,17 @@
+﻿version: '3.9'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    hostname: sqlserver-01
+    container_name: sqlserver-01
+    ports:
+      - "1433:1433" # Map port 1433 (adjust if needed)
+    environment:
+      ACCEPT_EULA: Y  # Crucial: Accept the EULA
+      SA_PASSWORD: Sudam@1997  # Replace with a VERY strong password
+    volumes:
+      - sql_data:/var/opt/mssql
+
+volumes:
+  sql_data:
+    driver: local  # Explicitly declare the local driver (best practice)
